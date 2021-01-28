@@ -1,0 +1,3 @@
+[submodule "deps/gta-v-data-dumps"]
+	path = deps/gta-v-data-dumps
+	url = https://github.com/DurtyFree/gta-v-data-dumps.git
