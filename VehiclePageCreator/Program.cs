@@ -59,11 +59,11 @@ namespace VehiclePageCreator
                 {
                     if (vehicle.DlcName.ToLower() == "titleupdate")
                     {
-                        gallery.WriteLine($"Image:{vehicle.Name.ToLower()}.png|'''Name:'''<br><code>{vehicle.Name.ToLower()}</code><br>'''Hash (Hex):<br>'''<code>0x{vehicle.HexHash}</code><br>'''Display Name:''' <br><code>{vehicle.DisplayName}</code>");
+                        gallery.WriteLine($"Image:{vehicle.Name.ToLower()}.png|'''Name:'''<br><code>{vehicle.Name.ToLower()}</code><br>'''Hash (Hex):<br>'''<code>{vehicle.HexHash}</code><br>'''Display Name:''' <br><code>{vehicle.DisplayName}</code>");
                     }
                     else
                     {
-                        gallery.WriteLine($"Image:{vehicle.Name.ToLower()}.png|'''Name:'''<br><code>{vehicle.Name.ToLower()}</code><br>'''Hash (Hex):<br>'''<code>0x{vehicle.HexHash}</code><br>'''Display Name:''' <br><code>{vehicle.DisplayName}</code><br>'''DLC:'''<br><code>{vehicle.DlcName.ToLower()}</code>");
+                        gallery.WriteLine($"Image:{vehicle.Name.ToLower()}.png|'''Name:'''<br><code>{vehicle.Name.ToLower()}</code><br>'''Hash (Hex):<br>'''<code>{vehicle.HexHash}</code><br>'''Display Name:''' <br><code>{vehicle.DisplayName}</code><br>'''DLC:'''<br><code>{vehicle.DlcName.ToLower()}</code>");
                     }
                 }
                 gallery.WriteLine("</hovergallery>");
