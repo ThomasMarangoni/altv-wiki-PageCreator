@@ -92,9 +92,9 @@ namespace VehiclePageCreator
             foreach (var vehicle in sortedVehiclesByName)
             {
                 if (i < sortedVehiclesByName.Count() - 1)
-                    snippets.WriteLine($"\t{vehicle.Name.ToLower()}: 0x{vehicle.HexHash},");
+                    snippets.WriteLine($"\t{vehicle.Name.ToLower()}: {vehicle.HexHash},");
                 else
-                    snippets.WriteLine($"\t{vehicle.Name.ToLower()}: 0x{vehicle.HexHash}");
+                    snippets.WriteLine($"\t{vehicle.Name.ToLower()}: {vehicle.HexHash}");
 
                 i++;
             }
@@ -111,9 +111,9 @@ namespace VehiclePageCreator
             foreach (var vehicle in sortedVehiclesByName)
             {
                 if (i < sortedVehiclesByName.Count() - 1)
-                    snippets.WriteLine($"\t{vehicle.Name.ToLower()} = 0x{vehicle.HexHash},");
+                    snippets.WriteLine($"\t{vehicle.Name.ToLower()} = {vehicle.HexHash},");
                 else
-                    snippets.WriteLine($"\t{vehicle.Name.ToLower()} =  0x{vehicle.HexHash}");
+                    snippets.WriteLine($"\t{vehicle.Name.ToLower()} =  {vehicle.HexHash}");
 
                 i++;
             }
@@ -129,7 +129,7 @@ namespace VehiclePageCreator
 
             foreach (var vehicle in sortedVehiclesByName)
             {
-                snippets.WriteLine($"\t{vehicle.Name.ToLower()} = 0x{vehicle.HexHash},");
+                snippets.WriteLine($"\t{vehicle.Name.ToLower()} = {vehicle.HexHash},");
             }
 
             snippets.WriteLine("};");
